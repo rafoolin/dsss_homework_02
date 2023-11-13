@@ -11,7 +11,8 @@ class TestMathGame(unittest.TestCase):
         # Test if random numbers generated are within the specified range
         min_val = 1
         max_val = 10
-        for _ in range(1000):  # Test a large number of random values
+        # Test a large number of random values
+        for _ in range(1000):
             random_number = generate_random_integer(min_val, max_val)
             self.assertTrue(min_val <= random_number <= max_val)
 
